@@ -7,10 +7,10 @@ namespace StarChart.Models
 {
     public class CelestialObject
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         [Required]
         public string Name { get; set; } 
-        public int? OrbotedObjectID { get; set; }
+        public int? OrbitedObjectID { get; set; }
         [NotMapped]
         public List<CelestialObject> Satellites { get; set; } 
         public TimeSpan OrbitalPeriod { get; set; }
